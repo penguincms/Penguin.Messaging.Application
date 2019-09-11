@@ -4,25 +4,28 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageProjectUrl>http://www.penguinms.com/Nuget</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/penguincms/Penguin.Messaging.Application</PackageProjectUrl>
 	<PackageIconUrl>http://www.penguinms.com/client/images/pg.png</PackageIconUrl>
     <Version>2.0.6</Version>
+	<IncludeSymbols>true</IncludeSymbols>    
+<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
     <PackageLicenseFile>License.txt</PackageLicenseFile>
     <Description>Message Containers for use in Penguin.Messaging.Core to represent various stages of the application lifecycle</Description>
   </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <WarningsAsErrors>NU1605, CS1591</WarningsAsErrors>
-    <DocumentationFile>C:\SVN\Framework\Nuget\Penguin.Messaging.Application\Penguin.Messaging.Application.xml</DocumentationFile>
+    <DocumentationFile>Penguin.Messaging.Application.xml</DocumentationFile>
   </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 	<DebugType>full</DebugType>
-      <DocumentationFile>C:\SVN\Framework\Nuget\Penguin.Messaging.Application\Penguin.Messaging.Application.xml</DocumentationFile>
+      <DocumentationFile>Penguin.Messaging.Application.xml</DocumentationFile>
     </PropertyGroup>
   
   <ItemGroup>
-    <None Include="..\License.txt">
+    <None Include="License.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
