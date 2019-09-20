@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Penguin.Messaging.Application</name>
+    </assembly>
+    <members>
+        <member name="M:Penguin.Messaging.Application.Extensions.MessageBusExtensions.Startup(Penguin.Messaging.Core.MessageBus)">
+            <summary>
+            Sends a Startup message over the message bus
+            </summary>
+            <param name="messageBus">The message bus to use</param>
+        </member>
+        <member name="M:Penguin.Messaging.Application.Extensions.MessageBusExtensions.Setup(Penguin.Messaging.Core.MessageBus)">
+            <summary>
+            Sends a Setup message over the message bus
+            </summary>
+            <param name="messageBus">The message bus to use</param>
+        </member>
+        <member name="M:Penguin.Messaging.Application.Extensions.MessageBusExtensions.Shutdown(Penguin.Messaging.Core.MessageBus)">
+            <summary>
+            Sends a Shutdown message over the message bus
+            </summary>
+            <param name="messageBus">The message bus to use</param>
+        </member>
+        <member name="M:Penguin.Messaging.Application.Extensions.MessageBusExtensions.Setup``1(Penguin.Messaging.Core.MessageBus)">
+            <summary>
+            Sends a Setup message over the message bus
+            </summary>
+            <typeparam name="T">The type of the object being set up</typeparam>
+            <param name="messageBus">The message bus to use</param>
+        </member>
+        <member name="T:Penguin.Messaging.Application.Messages.Setup`1">
+            <summary>
+            A setup message representing the configuration of objects matching a specified type
+            </summary>
+            <typeparam name="T">The type of the object being set up</typeparam>
+        </member>
+        <member name="M:Penguin.Messaging.Application.Messages.Setup`1.#ctor">
+            <summary>
+            Creates a new instance
+            </summary>
+        </member>
+        <member name="T:Penguin.Messaging.Application.Messages.Setup">
+            <summary>
+            A setup message representing the configuration of objects
+            </summary>
+        </member>
+        <member name="M:Penguin.Messaging.Application.Messages.Setup.#ctor">
+            <summary>
+            Creates a new instance
+            </summary>
+        </member>
+        <member name="T:Penguin.Messaging.Application.Messages.Shutdown">
+            <summary>
+            A message intended to be sent at the end of the application lifecycle
+            </summary>
+        </member>
+        <member name="M:Penguin.Messaging.Application.Messages.Shutdown.#ctor">
+            <summary>
+            Creates a new instance
+            </summary>
+        </member>
+        <member name="T:Penguin.Messaging.Application.Messages.Startup">
+            <summary>
+            A message intended to be sent at the beginning of the application lifecycle
+            </summary>
+        </member>
+        <member name="M:Penguin.Messaging.Application.Messages.Startup.#ctor">
+            <summary>
+            Creates a new instance
+            </summary>
+        </member>
+    </members>
+</doc>
