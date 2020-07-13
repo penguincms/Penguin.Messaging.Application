@@ -13,6 +13,11 @@ namespace Penguin.Messaging.Application.Extensions
         /// <param name="messageBus">The message bus to use</param>
         public static void Startup(this MessageBus messageBus)
         {
+            if (messageBus is null)
+            {
+                throw new System.ArgumentNullException(nameof(messageBus));
+            }
+
             messageBus.Send(new Penguin.Messaging.Application.Messages.Startup());
         }
 
@@ -22,6 +27,11 @@ namespace Penguin.Messaging.Application.Extensions
         /// <param name="messageBus">The message bus to use</param>
         public static void Setup(this MessageBus messageBus)
         {
+            if (messageBus is null)
+            {
+                throw new System.ArgumentNullException(nameof(messageBus));
+            }
+
             messageBus.Send(new Penguin.Messaging.Application.Messages.Setup());
         }
 
@@ -31,6 +41,11 @@ namespace Penguin.Messaging.Application.Extensions
         /// <param name="messageBus">The message bus to use</param>
         public static void Shutdown(this MessageBus messageBus)
         {
+            if (messageBus is null)
+            {
+                throw new System.ArgumentNullException(nameof(messageBus));
+            }
+
             messageBus.Send(new Penguin.Messaging.Application.Messages.Shutdown());
         }
 
@@ -41,6 +56,11 @@ namespace Penguin.Messaging.Application.Extensions
         /// <param name="messageBus">The message bus to use</param>
         public static void Setup<T>(this MessageBus messageBus)
         {
+            if (messageBus is null)
+            {
+                throw new System.ArgumentNullException(nameof(messageBus));
+            }
+
             messageBus.Send(new Penguin.Messaging.Application.Messages.Setup<T>());
         }
     }
