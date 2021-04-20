@@ -10,6 +10,6 @@
     <DocumentationFile>Penguin.Messaging.Application.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Penguin.Messaging.Core" Version="5.0.2-TACVG7B" />
+    <PackageReference Include="Penguin.Messaging.Core" Version="5.0.2-TADRIFB" />
   </ItemGroup>
 </Project>
